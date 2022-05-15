@@ -1,5 +1,7 @@
 # Arrays/Vetores
 
+Vetores
+
 A array is a collection of similar type of data. It can store multiple values.
 
 - todos elementos do mesmo tipo

@@ -1,5 +1,7 @@
 # Alocação Dinâmica Memória
 
+Alocação Dinâmica
+
 An array is a collection of a fixed number of values, but there are times that the size of the array declared may be insufficient. And here the use allocation of memory comes in.
 
 Memória dinâmica 

@@ -1,5 +1,7 @@
 # Variáveis
 
+Variáveis
+
 ### A variable is the name/symbol of the location where we store data. We controle the value, and so it can be reused **throughout the code.**
 
 - It can be composed by letters(uppercase and lowercase), digits and underscores.
