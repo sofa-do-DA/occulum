@@ -15,10 +15,6 @@ Vinícius de Oliveira Yoshioka
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
-
-    char buscar[100] = "\0";
-
     printf("\n");
     printf("\n");
     printf("               -+@@@@@@@+.          +@@@@@@@.       .#@@@@@@=     .@@:      .@@:    =@@       .@@+       @@*    :@@..*@@@@@#  :*@@@@@#    \n");
@@ -34,8 +30,9 @@ int main()
     printf("\n");
     printf("\n");
 
-    // Pega o input do usuário para usar na pesquisa
-    char buscar[100] = "\0";
+    // Suporte para língua portuguesa
+    setlocale(LC_ALL, "Portuguese");
+
     printf("Digite o que você quer buscar: ");
     fflush(stdin);
     gets(buscar);
