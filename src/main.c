@@ -46,7 +46,6 @@ int main()
     {
         return -1;
     }
-    strcat(caminhoAtual, "conteudo");
-
+    strcat(caminhoAtual, "/conteudo");
     return 0;
 }
