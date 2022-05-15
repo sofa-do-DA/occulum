@@ -35,10 +35,10 @@ int main()
     setlocale(LC_ALL, "Portuguese");
 
     // Pega o input do usuário para usar na pesquisa
-    char buscar[100] = "\0";
+    char buscar[100];
     printf("Digite o que você quer buscar: ");
     fflush(stdin);
-    gets(buscar);
+    scanf("%s", buscar);
 
     // Pega o caminho atual da execução do programa e concatena com a pasta "conteudo"
     char *caminhoAtual[4096];
