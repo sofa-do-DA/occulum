@@ -3,7 +3,7 @@ typedef struct _ItemDaListaString
 {
     struct _ItemDaListaString *anterior;
     struct _ItemDaListaString *proximo;
-    char dado[100];
+    char dado[4096];
 } ItemDaListaString;
 
 typedef struct
