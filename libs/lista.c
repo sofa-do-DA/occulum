@@ -116,7 +116,7 @@ void listaMostrarConteudo(Lista *lista, int sentido)
             itemDaLista = lista->inicio;
             do
             {
-                printf("%d", itemDaLista->dado);
+                printf("%d\n", itemDaLista->dado);
                 itemDaLista = itemDaLista->proximo;
             } while (itemDaLista != lista->inicio);
         }
@@ -125,7 +125,7 @@ void listaMostrarConteudo(Lista *lista, int sentido)
             itemDaLista = lista->fim;
             do
             {
-                printf("%d", itemDaLista->dado);
+                printf("%d\n", itemDaLista->dado);
                 itemDaLista = itemDaLista->anterior;
             } while (itemDaLista != lista->fim);
         }

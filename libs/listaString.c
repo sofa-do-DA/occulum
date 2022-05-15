@@ -117,7 +117,7 @@ void listaStringMostrarConteudo(ListaString *lista, int sentido)
             itemDaLista = lista->inicio;
             do
             {
-                printf("%s", itemDaLista->dado);
+                printf("%s\n", itemDaLista->dado);
                 itemDaLista = itemDaLista->proximo;
             } while (itemDaLista != lista->inicio);
         }
@@ -126,7 +126,7 @@ void listaStringMostrarConteudo(ListaString *lista, int sentido)
             itemDaLista = lista->fim;
             do
             {
-                printf("%s", itemDaLista->dado);
+                printf("%s\n", itemDaLista->dado);
                 itemDaLista = itemDaLista->anterior;
             } while (itemDaLista != lista->fim);
         }
