@@ -34,6 +34,8 @@ int main()
     printf("\n");
     printf("\n");
 
+    // Pega o input do usuário para usar na pesquisa
+    char buscar[100] = "\0";
     printf("Digite o que você quer buscar: ");
     fflush(stdin);
     gets(buscar);
