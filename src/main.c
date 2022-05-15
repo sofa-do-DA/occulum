@@ -53,4 +53,8 @@ int main()
     ListaString *arquivosParaPesquisar = criarListaString();
     pegarConteudo(arquivosParaPesquisar, caminhoAtual);
 
+    printf("\nArquivos pra pesquisar\n");
+    listaStringMostrarConteudo(arquivosParaPesquisar, 0);
+
+    return 0;
 }
