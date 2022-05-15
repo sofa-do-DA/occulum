@@ -9,13 +9,15 @@ Nicole Carvalho Lisboa
 Vinícius de Oliveira Yoshioka
 */
 
-
 #include <stdio.h>
+#include <string.h>
 #include <locale.h>
 
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
+
+    char buscar[100] = "\0";
 
     printf("\n");
     printf("\n");
@@ -31,6 +33,10 @@ int main()
     printf("     **                                                                                                                                   \n");
     printf("\n");
     printf("\n");
+
+    printf("Digite o que você quer buscar: ");
+    fflush(stdin);
+    gets(buscar);
 
     return 0;
 }
