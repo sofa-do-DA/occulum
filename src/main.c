@@ -13,6 +13,7 @@ Vinícius de Oliveira Yoshioka
 #include <string.h>
 #include <locale.h>
 #include <unistd.h>
+#include "../includes/fs.h"
 
 int main()
 {
@@ -47,5 +48,9 @@ int main()
         return -1;
     }
     strcat(caminhoAtual, "/conteudo");
-    return 0;
+
+    // Varre a pasta "conteudo" e insere os arquivos na lista
+    ListaString *arquivosParaPesquisar = criarListaString();
+    pegarConteudo(arquivosParaPesquisar, caminhoAtual);
+
 }
