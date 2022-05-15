@@ -41,7 +41,7 @@ int main()
     scanf("%s", buscar);
 
     // Pega o caminho atual da execução do programa e concatena com a pasta "conteudo"
-    char *caminhoAtual[4096];
+    char caminhoAtual[TAMANHO_CAMINHO];
     if (getcwd(caminhoAtual, sizeof(caminhoAtual)) == NULL)
     {
         return -1;
