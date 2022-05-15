@@ -1,0 +1,11 @@
+Projeto completo (defesa final)
+Vídeo de apresentação: para defesa do seu desenvolvimento e demonstração comentada da execução do programa;
+Código comentado: para identificação das principais estruturas e rotinas, com ênfase sobre a lógica utilizada e principais funcionalidades.
+Todos os documentos (código e vídeo) devem apresentar os nomes dos integrantes e referências de consulta (caso existam).
+Atenção:
+  . O vídeo deve ser salvo no Google Drive ou One Drive e somente o link encaminhado na atividade do Canvas
+  . O código pode ser compactado (com zip ou rar) e encaminhado no canvas ou então, informe o endereço do respectivo repositório (GitHub) do projeto
+
+Veja também:
+https://pucminas.instructure.com/courses/97735/pages/ansi-escape-codes
+https://pucminas.instructure.com/courses/97735/pages/comandos-de-prompt
