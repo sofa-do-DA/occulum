@@ -21,3 +21,5 @@ int removerItemString(ListaString *lista, char dado[]);
 int listaStringEstaVazia(ListaString *lista);
 
 void listaStringMostrarConteudo(ListaString *lista, int sentido);
+
+void inserirOrdenadoItemString(ListaString *lista, char dado[]);

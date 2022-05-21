@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../includes/listaString.h"
+#include "../includes/cmp.h"
 
 /**
  * Aloca memória para ListaString, define suas propriedade como NULL,
@@ -129,6 +130,62 @@ void listaStringMostrarConteudo(ListaString *lista, int sentido)
                 printf("%s\n", itemDaLista->dado);
                 itemDaLista = itemDaLista->anterior;
             } while (itemDaLista != lista->fim);
+        }
+    }
+}
+
+void inserirOrdenadoItemString(ListaString *lista, char dado[])
+{
+    ItemDaListaString *novoItemDaLista, *itemA, *itemB;
+
+    // Aloca memória para novoItemDaLista
+    novoItemDaLista = (ItemDaListaString *)malloc(sizeof(ItemDaListaString));
+    if (novoItemDaLista == NULL)
+    {
+        // TODO
+        printf("Memoria esgotada!\n");
+        return;
+    }
+
+    // Define o valor das propriedades do novoItemDaLista
+    novoItemDaLista->proximo = NULL;
+    novoItemDaLista->anterior = NULL;
+    strcpy(novoItemDaLista->dado, dado);
+
+    // Insere o novo item na lista
+    if (lista->inicio == NULL)
+    {
+        // Inserção quando a lista está vazia
+        lista->inicio = novoItemDaLista;
+        lista->fim = novoItemDaLista;
+    }
+    else
+    {
+        // Inserção quando a lista não está vazia
+        itemA = lista->inicio;
+        while (itemA != NULL)
+        {
+            if (string_cmp(novoItemDaLista->dado, itemA->dado) < 0)
+            {
+                if (lista->inicio == itemA)
+                {
+                    lista->inicio = novoItemDaLista;
+                }
+                else
+                {
+                    itemB->proximo = novoItemDaLista;
+                    itemB->anterior = novoItemDaLista;
+                }
+                novoItemDaLista->proximo = itemA;
+                break;
+            }
+            itemB = itemA;
+            itemA = itemA->proximo;
+        }
+        if (itemA == NULL)
+        {
+            lista->fim->proximo = novoItemDaLista;
+            lista->fim = novoItemDaLista;
         }
     }
 }
