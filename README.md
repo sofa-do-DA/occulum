@@ -26,6 +26,7 @@ A necessidade de um programa onde o usuário ou empresa possa fazer a entrada de
 O Supremo Tribunal Federal (STF) finalizou, em março, o projeto “Arquivo 100% Digital”, que converteu para o formato digital todo o acervo judicial destinado à guarda permanente do STF. Foram digitalizados aproximadamente 20 mil volumes de processos físicos, autuados entre 1970 e 2018, excluídos apenas os processos que possuem restrição de acesso e os que demandam intervenções para o seu manuseio.
 Como resultado principal, tem-se a disseminação da informação de forma mais célere e universal, com redução de custos para a Administração e para os usuários.
 Como desdobramento do projeto, a próxima etapa consiste em implantar uma ferramenta de pesquisa e de difusão dessa documentação, para que todo o acervo possa ser pesquisado ativamente por usuários externos.
+
 Para uso pessoal, uma pessoa pode fazer um espécie de compêndio ou enciclopédia de estudos, um diário ou coisa parecida. 
 
 # Proposta
