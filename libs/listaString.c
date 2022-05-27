@@ -1,8 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#ifndef _LISTA_STRING_H
 #include "../includes/listaString.h"
+#endif
+
+#ifndef _CMP_H
 #include "../includes/cmp.h"
+#endif
 
 /**
  * Aloca memória para ListaString, define suas propriedade como NULL,

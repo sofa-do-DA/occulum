@@ -3,7 +3,14 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #include <string.h>
+
+#ifndef _FS_H
 #include "../includes/fs.h"
+#endif
+
+#ifndef _LISTA_STRING_H
+#include "../includes/listaString.h"
+#endif
 
 void pegarConteudo(ListaString *arquivos, char caminho[])
 {

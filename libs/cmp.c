@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+
+#ifndef _CMP_H
 #include "../includes/cmp.h"
+#endif
 
 int string_cmp(char string1[], char string2[])
 {
