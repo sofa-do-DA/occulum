@@ -13,7 +13,14 @@ Vinícius de Oliveira Yoshioka
 #include <string.h>
 #include <locale.h>
 #include <unistd.h>
+
+#ifndef _LISTA_STRING_H
+#include "../includes/listaString.h"
+#endif
+
+#ifndef _FS_H
 #include "../includes/fs.h"
+#endif
 
 int main()
 {
