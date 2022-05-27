@@ -1,4 +1,6 @@
+#ifndef _LISTA_STRING_H
 #include "../includes/listaString.h"
+#endif
 
 #define _FS_H 1
 
