@@ -1,4 +1,6 @@
 
+#define _LISTA_STRING_H 1
+
 typedef struct _ItemDaListaString
 {
     struct _ItemDaListaString *anterior;
