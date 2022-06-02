@@ -13,6 +13,7 @@ Vinícius de Oliveira Yoshioka
 #include <string.h>
 #include <locale.h>
 #include <unistd.h>
+#include "usage.h"
 
 #ifndef _LISTA_STRING_H
 #include "listaString.h"
@@ -22,8 +23,21 @@ Vinícius de Oliveira Yoshioka
 #include "fs.h"
 #endif
 
-int main()
+int main(int argc, char const *argv[])
 {
+
+    if (argc > 1)
+    {
+        for (int i = 0; i < argc; i++)
+        {
+            if (strcmp(argv[i], "-h") == 0)
+            {
+                usage();
+                return 0;
+            }
+        }
+    }
+
     printf("\n");
     printf("\n");
     printf("               -+@@@@@@@+.          +@@@@@@@.       .#@@@@@@=     .@@:      .@@:    =@@       .@@+       @@*    :@@..*@@@@@#  :*@@@@@#    \n");
