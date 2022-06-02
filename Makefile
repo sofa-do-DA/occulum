@@ -61,7 +61,7 @@ bindir:
 
 ./objs/%.o: ./libs/%.c
 	@echo 'Compilando o alvo para: $<'
-	$(CC) $< -fPIC $(STD) $(CC_FLAGS) -o $@
+	$(CC) $< -fPIC $(STD) $(CC_FLAGS) -I. -I$(INCLUDES) -o $@
 	@echo
 
 .PHONY: all clean
