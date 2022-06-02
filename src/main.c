@@ -15,11 +15,11 @@ Vinícius de Oliveira Yoshioka
 #include <unistd.h>
 
 #ifndef _LISTA_STRING_H
-#include "../includes/listaString.h"
+#include "listaString.h"
 #endif
 
 #ifndef _FS_H
-#include "../includes/fs.h"
+#include "fs.h"
 #endif
 
 int main()

@@ -3,7 +3,7 @@
 #include <string.h>
 
 #ifndef _ARVORE_ARQUIVOS_H
-#include "../includes/arvoreArquivos.h"
+#include "arvoreArquivos.h"
 #endif
 
 void adicionarItem(Arvore *no, char nome[], char caminho[])
