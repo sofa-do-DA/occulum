@@ -1,3 +1,4 @@
+
 // Definição para verificar se este header já foi importado ou não
 #define _TAMANHOS 1
 
