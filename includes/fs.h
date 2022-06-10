@@ -7,10 +7,10 @@
 
 /**
  * Lista, recursivamente, o conteúdo da pasta dada pelo parâmetro 'caminho',
- * os arquivos são adicionados à lista dada pelo parâmetro 'arquivos' e
- * as pastar são varridas com recursão
+ * os arquivos são adicionados à árvore dada pelo parâmetro 'arquivos' e
+ * as pastas são varridas com recursão
  *
- * @param arquivos Ponteiro de uma ListaString que armazena caminhos de arquivos
+ * @param arquivos Ponteiro de uma Arvore que armazena caminhos de arquivos
  * @param caminho Caminho da pasta a ser lida
  */
 void pegarConteudo(Arvore *arquivos, char caminho[]);
