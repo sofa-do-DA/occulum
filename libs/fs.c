@@ -4,6 +4,10 @@
 #include <sys/stat.h>
 #include <string.h>
 
+#ifndef _TAMANHOS
+#include "tamanhos.h"
+#endif
+
 #ifndef _FS_H
 #include "../includes/fs.h"
 #endif

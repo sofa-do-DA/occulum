@@ -1,5 +1,5 @@
-#ifndef _FS_H
-#include "../includes/fs.h"
+#ifndef _TAMANHOS
+#include "../includes/tamanhos.h"
 #endif
 
 // Definição para verificar se este header já foi importado ou não
