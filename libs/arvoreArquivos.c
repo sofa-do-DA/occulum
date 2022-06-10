@@ -8,12 +8,11 @@
 
 void adicionarItem(Arvore *no, char nome[], char caminho[])
 {
+    // Cria um nó e insere dados quando a árvore estiver vazia
     if (*no == NULL)
     {
-        // Aloca memória para criar a função insere
-        *no = (Arvore *)malloc(sizeof(Arvore));
+        *no = (struct ItemArvore *)malloc(sizeof(struct ItemArvore));
 
-        // Inserir quando a árvore estiver vazia
         if (*no != NULL)
         {
             (*no)->esquerda = NULL;
@@ -25,13 +24,17 @@ void adicionarItem(Arvore *no, char nome[], char caminho[])
         else
             printf("Memória Insuficiente\n");
     }
-    // Inserir quando já houver dados na árvore
-    else if (strcmp(nome, (*no)->nome) < 0 || strcmp(caminho, (*no)->caminho) < 0)
+    // Quando já houver dados na árvore
+    // Inserir à esquerda se o nome do arquivo for <= ao nome do arquivo existente
+    else if (strcmp(nome, (*no)->nome) <= 0)
+    {
         adicionarItem(&(*no)->esquerda, nome, caminho);
-    else if (strcmp(nome, (*no)->nome) > 0 || strcmp(caminho, (*no)->caminho) > 0)
+    }
+    // Inserir à direita se o nome do arquivo for > que o nome do arquivo existente
+    else if (strcmp(nome, (*no)->nome) > 0)
+    {
         adicionarItem(&(*no)->direita, nome, caminho);
-    else
-        printf("Duplicação de no\n");
+    }
 }
 
 void mostrarEmOrdem(Arvore no)
