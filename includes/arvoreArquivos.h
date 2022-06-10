@@ -31,26 +31,7 @@ typedef struct ItemArvore *Arvore;
 void adicionarItem(Arvore *no, char nome[], char caminho[]);
 
 /**
- * Mostra o conteúdo da árvore em pré-ordem
- * @param no Ponteiro da árvore
- */
-void mostrarPreOrdem(Arvore no);
-
-/**
  * Mostra o conteúdo da árvore em ordem
  * @param no Ponteiro da árvore
  */
 void mostrarEmOrdem(Arvore no);
-
-/**
- * Mostra o conteúdo da árvore em pós-ordem
- * @param no Ponteiro da árvore
- */
-void mostrarPosOrdem(Arvore no);
-
-/**
- * @param no Ponteiro da árvore
- * @param nome String com o nome do arquivo
- * @param caminho String com o caminho do arquivo
- */
-Arvore *removerItem(Arvore *no, char nome[], char caminho[]);
