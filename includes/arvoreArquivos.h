@@ -7,7 +7,7 @@
 
 /**
  * @param esquerda Ponteiro do ItemArvore filho à esquerda do item atual
- * @param direita Pinteiro do ItemArvore filho à direita do item atual
+ * @param direita Ponteiro do ItemArvore filho à direita do item atual
  * @param nome String do nome do arquivo
  * @param caminho String do caminho completo do arquivo
  */
