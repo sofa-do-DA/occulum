@@ -48,7 +48,7 @@ void pegarConteudo(Arvore *arquivos, char caminho[])
                 // Arquivos
                 // Adiciona arquivo na árvore
                 free(buffer);
-                adicionarItem(&arquivos, dirent->d_name, caminhoDoArquivo);
+                adicionarItem(arquivos, dirent->d_name, caminhoDoArquivo);
             }
             else
             {
