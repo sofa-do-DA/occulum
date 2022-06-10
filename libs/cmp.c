@@ -42,4 +42,7 @@ int string_cmp(char string1[], char string2[])
     {
         return 1;
     }
+
+    // Retornado caso nenhuma condição anterior seja atendida
+    return -1;
 }
