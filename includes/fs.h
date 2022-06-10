@@ -1,5 +1,5 @@
-#ifndef _LISTA_STRING_H
-#include "../includes/listaString.h"
+#ifndef _ARVORE_ARQUIVOS_H
+#include "../includes/arvoreArquivos.h"
 #endif
 
 // Definição para verificar se este header já foi importado ou não
@@ -13,4 +13,4 @@
  * @param arquivos Ponteiro de uma ListaString que armazena caminhos de arquivos
  * @param caminho Caminho da pasta a ser lida
  */
-void pegarConteudo(ListaString *arquivos, char caminho[]);
+void pegarConteudo(Arvore *arquivos, char caminho[]);

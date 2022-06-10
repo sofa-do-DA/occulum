@@ -12,11 +12,11 @@
 #include "../includes/fs.h"
 #endif
 
-#ifndef _LISTA_STRING_H
-#include "../includes/listaString.h"
+#ifndef _ARVORE_ARQUIVOS_H
+#include "../includes/arvoreArquivos.h"
 #endif
 
-void pegarConteudo(ListaString *arquivos, char caminho[])
+void pegarConteudo(Arvore *arquivos, char caminho[])
 {
     printf("Varrendo pasta '%s'\n", caminho);
 
@@ -46,9 +46,9 @@ void pegarConteudo(ListaString *arquivos, char caminho[])
             if (S_ISREG(buffer->st_mode))
             {
                 // Arquivos
-                // Adiciona arquivo na lista
+                // Adiciona arquivo na árvore
                 free(buffer);
-                inserirItemString(arquivos, caminhoDoArquivo);
+                adicionarItem(&arquivos, dirent->d_name, caminhoDoArquivo);
             }
             else
             {
