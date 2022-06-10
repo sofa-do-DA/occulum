@@ -1,5 +1,5 @@
 #ifndef _ARVORE_ARQUIVOS_H
-#include "../includes/arvoreArquivos.h"
+#include "arvoreArquivos.h"
 #endif
 
 // Definição para verificar se este header já foi importado ou não

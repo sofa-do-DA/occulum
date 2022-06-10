@@ -9,11 +9,11 @@
 #endif
 
 #ifndef _FS_H
-#include "../includes/fs.h"
+#include "fs.h"
 #endif
 
 #ifndef _ARVORE_ARQUIVOS_H
-#include "../includes/arvoreArquivos.h"
+#include "arvoreArquivos.h"
 #endif
 
 void pegarConteudo(Arvore *arquivos, char caminho[])

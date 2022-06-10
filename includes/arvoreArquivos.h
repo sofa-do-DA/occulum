@@ -1,5 +1,5 @@
 #ifndef _TAMANHOS
-#include "../includes/tamanhos.h"
+#include "tamanhos.h"
 #endif
 
 // Definição para verificar se este header já foi importado ou não
