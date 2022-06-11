@@ -15,12 +15,16 @@ Vinícius de Oliveira Yoshioka
 #include <unistd.h>
 #include "usage.h"
 
-#ifndef _LISTA_STRING_H
-#include "listaString.h"
-#endif
-
 #ifndef _FS_H
 #include "fs.h"
+#endif
+
+#ifndef _TAMANHOS
+#include "tamanhos.h"
+#endif
+
+#ifndef _ARVORE_ARQUIVOS_H
+#include "arvoreArquivos.h"
 #endif
 
 int main(int argc, char const *argv[])
@@ -70,12 +74,13 @@ int main(int argc, char const *argv[])
     }
     strcat(caminhoAtual, "/conteudo");
 
-    // Varre a pasta "conteudo" e insere os arquivos na lista
-    ListaString *arquivosParaPesquisar = criarListaString();
-    pegarConteudo(arquivosParaPesquisar, caminhoAtual);
+    // Varre a pasta "conteudo" e insere os arquivos na arvore
+    Arvore arquivosParaPesquisar = NULL;
+    pegarConteudo(&arquivosParaPesquisar, caminhoAtual);
 
+    // Mostrar conteúdo da árvore
     printf("\nArquivos pra pesquisar\n");
-    listaStringMostrarConteudo(arquivosParaPesquisar, 0);
+    mostrarEmOrdem(arquivosParaPesquisar);
 
     return 0;
 }
