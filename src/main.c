@@ -34,7 +34,15 @@ Arvore arquivosParaPesquisar = NULL;
 
 int main(int argc, char const *argv[])
 {
-
+    /**
+     * Requisito do trabalho:
+     * - Uso da função 'usage()'
+     *
+     * Se a quantidade de argumentos passados para
+     * o programa for > 1, faz a busca por "-h".
+     * Caso ele seja encontrado, é exibida a mensagem
+     * de usage(), e o programa para sua execução.
+     */
     if (argc > 1)
     {
         for (int i = 0; i < argc; i++)
