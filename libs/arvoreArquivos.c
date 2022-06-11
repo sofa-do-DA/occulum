@@ -42,7 +42,9 @@ void mostrarEmOrdem(Arvore no)
     if (no != NULL)
     {
         mostrarEmOrdem(no->esquerda);
-        printf("%s %s\n", no->nome, no->caminho);
+        printf("Nome: %s\n", no->nome);
+        printf("Caminho: %s\n", no->caminho);
+        printf("\n");
         mostrarEmOrdem(no->direita);
     }
 }
