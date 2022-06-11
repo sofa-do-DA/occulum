@@ -65,11 +65,6 @@ int main(int argc, char const *argv[])
     // Suporte para língua portuguesa
     setlocale(LC_ALL, "Portuguese");
 
-    // Pega o input do usuário para usar na pesquisa
-    printf("Digite o que você quer buscar: ");
-    fflush(stdin);
-    scanf("%s", termoDeBusca);
-
     // Pega o caminho atual da execução do programa e concatena com a pasta "conteudo"
     if (getcwd(caminhoAtual, sizeof(caminhoAtual)) == NULL)
     {
@@ -79,6 +74,11 @@ int main(int argc, char const *argv[])
 
     // Varre a pasta "conteudo" e insere os arquivos na arvore
     pegarConteudo(&arquivosParaPesquisar, caminhoAtual);
+
+    // Pega o input do usuário para usar na pesquisa
+    printf("Digite o que você quer buscar: ");
+    fflush(stdin);
+    scanf("%s", termoDeBusca);
 
     // Mostrar conteúdo da árvore
     printf("\nArquivos pra pesquisar\n");
