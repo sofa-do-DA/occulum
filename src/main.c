@@ -27,6 +27,11 @@ Vinícius de Oliveira Yoshioka
 #include "arvoreArquivos.h"
 #endif
 
+// Variáveis principais usadas na função main
+char termoDeBusca[100];
+char caminhoAtual[TAMANHO_CAMINHO];
+Arvore arquivosParaPesquisar = NULL;
+
 int main(int argc, char const *argv[])
 {
 
@@ -61,13 +66,11 @@ int main(int argc, char const *argv[])
     setlocale(LC_ALL, "Portuguese");
 
     // Pega o input do usuário para usar na pesquisa
-    char buscar[100];
     printf("Digite o que você quer buscar: ");
     fflush(stdin);
-    scanf("%s", buscar);
+    scanf("%s", termoDeBusca);
 
     // Pega o caminho atual da execução do programa e concatena com a pasta "conteudo"
-    char caminhoAtual[TAMANHO_CAMINHO];
     if (getcwd(caminhoAtual, sizeof(caminhoAtual)) == NULL)
     {
         return -1;
@@ -75,7 +78,6 @@ int main(int argc, char const *argv[])
     strcat(caminhoAtual, "/conteudo");
 
     // Varre a pasta "conteudo" e insere os arquivos na arvore
-    Arvore arquivosParaPesquisar = NULL;
     pegarConteudo(&arquivosParaPesquisar, caminhoAtual);
 
     // Mostrar conteúdo da árvore
