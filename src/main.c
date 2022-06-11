@@ -84,14 +84,23 @@ int main(int argc, char const *argv[])
     // Varre a pasta "conteudo" e insere os arquivos na arvore
     pegarConteudo(&arquivosParaPesquisar, caminhoAtual);
 
-    // Pega o input do usuário para usar na pesquisa
-    printf("\nDigite o que você quer buscar: ");
-    fflush(stdin);
-    scanf("%s", termoDeBusca);
+    do
+    {
+        // Pega o input do usuário para usar na pesquisa
+        printf("\n");
+        printf("Digite o que você quer buscar\n");
+        printf("Para sair, escreva '/sair'\n");
+        printf("> ");
+        fflush(stdin);
+        scanf("%s", termoDeBusca);
 
-    // Mostrar conteúdo da árvore
-    printf("\nArquivos pra pesquisar\n");
-    mostrarEmOrdem(arquivosParaPesquisar);
+        // Mostrar conteúdo da árvore
+        if (strcmp(termoDeBusca, "/sair") != 0)
+        {
+            printf("\nArquivos pra pesquisar\n");
+            mostrarEmOrdem(arquivosParaPesquisar);
+        }
+    } while (strcmp(termoDeBusca, "/sair") != 0);
 
     return 0;
 }
