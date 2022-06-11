@@ -47,6 +47,10 @@ int main(int argc, char const *argv[])
         }
     }
 
+    // Suporte para língua portuguesa
+    setlocale(LC_ALL, "Portuguese");
+
+    // Mostra a logo do programa
     printf("\n");
     printf("\n");
     printf("               -+@@@@@@@+.          +@@@@@@@.       .#@@@@@@=     .@@:      .@@:    =@@       .@@+       @@*    :@@..*@@@@@#  :*@@@@@#    \n");
@@ -61,9 +65,6 @@ int main(int argc, char const *argv[])
     printf("     **                                                                                                                                   \n");
     printf("\n");
     printf("\n");
-
-    // Suporte para língua portuguesa
-    setlocale(LC_ALL, "Portuguese");
 
     // Pega o caminho atual da execução do programa e concatena com a pasta "conteudo"
     if (getcwd(caminhoAtual, sizeof(caminhoAtual)) == NULL)
