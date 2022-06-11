@@ -7,3 +7,6 @@
 
 // Define o tamanho da string que armazena o nome de arquivos
 #define TAMANHO_NOME_ARQUIVO 256
+
+// Define o tamanho da string que armazena o termo de busca dado pelo usuário
+#define TAMANHO_INPUT_BUSCA 1024
