@@ -85,7 +85,7 @@ int main(int argc, char const *argv[])
     pegarConteudo(&arquivosParaPesquisar, caminhoAtual);
 
     // Pega o input do usuário para usar na pesquisa
-    printf("Digite o que você quer buscar: ");
+    printf("\nDigite o que você quer buscar: ");
     fflush(stdin);
     scanf("%s", termoDeBusca);
 
