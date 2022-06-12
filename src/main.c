@@ -94,11 +94,10 @@ int main(int argc, char const *argv[])
         fflush(stdin);
         scanf("%s", termoDeBusca);
 
-        // Mostrar conteúdo da árvore
+        // Realiza a busca
         if (strcmp(termoDeBusca, "/sair") != 0)
         {
-            printf("\nArquivos pra pesquisar\n");
-            mostrarEmOrdem(arquivosParaPesquisar);
+            buscarArquivo(&arquivosParaPesquisar, termoDeBusca);
         }
     } while (strcmp(termoDeBusca, "/sair") != 0);
 
