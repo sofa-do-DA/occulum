@@ -17,41 +17,10 @@ void lowerString(char string[])
 
 int string_cmp(char string1[], char string2[])
 {
-    int i = 0;
+    // Converte as string para minúsculo
+    lowerString(string1);
+    lowerString(string2);
 
-    // Enquanto as duas strings forem iguais
-    while (string1[i] == string2[i])
-    {
-        // Faz verficação quando as duas strings terminarem
-        if (string1[i] == '\0' && string2[i] == '\0')
-        {
-            return 0;
-        }
-        i += 1;
-    }
-
-    // Faz verificação quando a primeira string terminou
-    if (string1[i] == '\0' && string2[i] != '\0')
-    {
-        return -1;
-    }
-    // Faz verificação quando a segunda string terminou
-    if (string1[i] != '\0' && string2[i] == '\0')
-    {
-        return 1;
-    }
-
-    // Identifica quando um caractere for menor que o outro
-    if (tolower(string1[i]) < tolower(string2[i]))
-    {
-        return -1;
-    }
-    // Identifica quando um caractere for maior que o outro
-    if (tolower(string1[i]) > tolower(string2[i]))
-    {
-        return 1;
-    }
-
-    // Retornado caso nenhuma condição anterior seja atendida
-    return -1;
+    // Compara as duas strings
+    return strcmp(string1, string2);
 }
