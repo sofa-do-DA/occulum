@@ -3,6 +3,13 @@
 #define _CMP_H 1
 
 /**
+ * Converte a string para caracteres minúsculos
+ *
+ * @param string string a ser convertida para minúscula
+ */
+void lowerString(char string[]);
+
+/**
  * Compara duas strings
  *
  * @param string1 string primária da comparação

@@ -6,6 +6,15 @@
 #include "cmp.h"
 #endif
 
+void lowerString(char string[])
+{
+    int tamanhoString = strlen(string);
+    for (int i = 0; i < tamanhoString; i++)
+    {
+        string[i] = tolower(string[i]);
+    }
+}
+
 int string_cmp(char string1[], char string2[])
 {
     int i = 0;
