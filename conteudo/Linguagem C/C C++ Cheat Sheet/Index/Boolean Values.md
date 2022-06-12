@@ -1,3 +1,0 @@
-# Boolean Values
-
-Valores Booleanos
