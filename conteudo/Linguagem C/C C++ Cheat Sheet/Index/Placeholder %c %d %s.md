@@ -1,1 +1,0 @@
-# Placeholder %c %d %s
