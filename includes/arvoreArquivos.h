@@ -35,3 +35,12 @@ void adicionarItem(Arvore *no, char nome[], char caminho[]);
  * @param no Ponteiro da árvore
  */
 void mostrarEmOrdem(Arvore no);
+
+/**
+ * Busca arquivos com mesmo nome do parâmetro nome na árvore
+ * e mostra os resultados
+ *
+ * @param no Ponteiro da árvore
+ * @param nome String com o nome a ser pesquisado
+ */
+void buscarArquivo(Arvore *no, char nome[]);
