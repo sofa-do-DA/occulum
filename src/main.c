@@ -97,7 +97,7 @@ int main(int argc, char const *argv[])
         // Realiza a busca
         if (strcmp(termoDeBusca, "/sair") != 0)
         {
-            buscarArquivo(&arquivosParaPesquisar, termoDeBusca);
+            buscarArquivo(arquivosParaPesquisar, termoDeBusca);
         }
     } while (strcmp(termoDeBusca, "/sair") != 0);
 

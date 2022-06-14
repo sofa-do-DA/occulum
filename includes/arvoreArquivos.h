@@ -43,4 +43,4 @@ void mostrarEmOrdem(Arvore no);
  * @param no Ponteiro da árvore
  * @param nome String com o nome a ser pesquisado
  */
-void buscarArquivo(Arvore *no, char nome[]);
+void buscarArquivo(Arvore no, char nome[]);

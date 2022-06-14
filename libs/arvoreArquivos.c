@@ -53,7 +53,7 @@ void mostrarEmOrdem(Arvore no)
     }
 }
 
-void buscarArquivo(Arvore *no, char nome[])
+void buscarArquivo(Arvore no, char nome[])
 {
     if (no == NULL)
     {
@@ -61,20 +61,20 @@ void buscarArquivo(Arvore *no, char nome[])
         return;
     }
 
-    int comparacaoDoNome = string_cmp(nome, (*no)->nome);
+    int comparacaoDoNome = string_cmp(nome, no->nome);
     if (comparacaoDoNome == 0)
     {
         printf("ARQUIVO ENCONTRADO\n");
-        printf("Nome: '%s'\n", (*no)->nome);
-        printf("Caminho: '%s'\n", (*no)->caminho);
+        printf("Nome: '%s'\n", no->nome);
+        printf("Caminho: '%s'\n", no->caminho);
         printf("\n");
     }
     else if (comparacaoDoNome < 0)
     {
-        buscarArquivo(&(*no)->esquerda, nome);
+        buscarArquivo(no->esquerda, nome);
     }
     else
     {
-        buscarArquivo(&(*no)->direita, nome);
+        buscarArquivo(no->direita, nome);
     }
 }
