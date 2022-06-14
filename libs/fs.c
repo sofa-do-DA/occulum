@@ -58,6 +58,7 @@ void pegarConteudo(Arvore *arquivos, char caminho[])
                 pegarConteudo(arquivos, caminhoDoArquivo);
             }
         }
+        printf("Varredura de '%s' concluída\n", caminho);
         closedir(dir);
     }
 }
