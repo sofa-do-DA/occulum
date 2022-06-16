@@ -1,12 +1,12 @@
 /*
 Atividade final: Projeto completo
-Occulum
+- Occulum
 
 Integrantes:
-Leonardo Vilas Boas Mendes
-Lucca Pagin Barbosa Rios
-Nicole Carvalho Lisboa
-Vinícius de Oliveira Yoshioka
+- Leonardo Vilas Boas Mendes
+- Lucca Pagin Barbosa Rios
+- Nicole Carvalho Lisboa
+- Vinícius de Oliveira Yoshioka
 */
 
 /*
