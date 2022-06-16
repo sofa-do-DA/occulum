@@ -57,7 +57,6 @@ void buscarArquivo(Arvore no, char nome[])
 {
     if (no == NULL)
     {
-        printf("\nArvore vazia\n");
         return;
     }
 
