@@ -20,9 +20,11 @@ void pegarConteudo(Arvore *arquivos, char caminho[])
 {
     printf("Varrendo pasta '%s'\n", caminho);
 
+    // Abre a pasta da variavel caminho
     DIR *dir = opendir(caminho);
     struct dirent *dirent;
 
+    // String que armazena o caminho completo do arquivo
     char caminhoDoArquivo[TAMANHO_CAMINHO];
 
     if (dir != NULL)
@@ -58,7 +60,10 @@ void pegarConteudo(Arvore *arquivos, char caminho[])
                 pegarConteudo(arquivos, caminhoDoArquivo);
             }
         }
-        printf("Varredura de '%s' concluída\n", caminho);
+
+        // Fecha a pasta
         closedir(dir);
+
+        printf("Varredura de '%s' concluída\n", caminho);
     }
 }
