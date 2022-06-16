@@ -9,6 +9,19 @@ Nicole Carvalho Lisboa
 Vinícius de Oliveira Yoshioka
 */
 
+/*
+Conceitos utilizados
+- Função
+- Ponteiro
+- Registros e typedef
+- Alocação dinâmica de memória
+- Ordenação e pesquisa foram feitas da própria árvore
+- Árvore binária
+- Criação de bibliotecas
+- Compilação usando makefile
+- Utilização do Git e Github
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
