@@ -104,7 +104,6 @@ int main(int argc, char const *argv[])
         printf("Digite o que você quer buscar\n");
         printf("Para sair, escreva '/sair'\n");
         printf("> ");
-        fflush(stdin);
         scanf("%s", termoDeBusca);
 
         // Realiza a busca
