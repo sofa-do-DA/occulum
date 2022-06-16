@@ -68,6 +68,8 @@ void buscarArquivo(Arvore no, char nome[])
         printf("Nome: '%s'\n", no->nome);
         printf("Caminho: '%s'\n", no->caminho);
         printf("\n");
+
+        buscarArquivo(no->esquerda, nome);
     }
     else if (comparacaoDoNome < 0)
     {
